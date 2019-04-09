@@ -1,0 +1,38 @@
+
+.normal {
+    font-family: Georgia, sans-serif;
+}
+
+.header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: #fff;
+}
+
+.title {
+    width: 300px;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: center;
+    color: #000;
+    font-weight: bolder;
+    background: rgba(216, 215, 215, 0.3);
+    float: left;
+    padding: 0 15px;
+    margin: 16px 30px 16px 0;
+}
+
+.menu {
+    line-height: 62px;
+    float: left;
+}
+
+.banner {
+    margin-top: 100px;
+}
+
+.content {
+    padding: 20px 0 0 0;
+    background: #fff;
+}
