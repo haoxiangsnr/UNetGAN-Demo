@@ -1,4 +1,4 @@
-![low_snr_demo](static/low_snr_demo.png)
+![low_snr_demo](src/assets/low_snr_demo.png)
 
 **Under Construction...**
 
