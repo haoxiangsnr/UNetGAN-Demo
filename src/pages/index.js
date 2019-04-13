@@ -3,7 +3,6 @@ import React from "react";
 import Header from "../components/header";
 import {Button, Col, Icon, Layout, List, Menu, message, notification, Row, Upload} from "antd"
 import reqwest from 'reqwest';
-import Link from 'umi/link';
 
 const SPEECH_ENHANCEMENT_URL = "http://202.207.12.159:1111";
 
@@ -89,9 +88,12 @@ export default class IndexPage extends React.Component {
         const BannerDataSource = [
             (<div>1. The size of the uploaded file is 2MB or less, and the format is required to be wav format. The
                 recommended sampling rate is 16000 Hz. The recommended SNR of the noisy speech is 0~-20dB.</div>),
-            (<div>2. With respect to the training set, We randomly selected 600 utterances from the <a href="https://catalog.ldc.upenn.edu/LDC93S1">TIMIT
+            (<div>2. With respect to the training set, We randomly selected 600 utterances from the <a
+                href="https://catalog.ldc.upenn.edu/LDC93S1">TIMIT
                 corpus</a> and selected babble, factoryfloor1, destroyerengine and destroyerops from <a
-                    href="http://spib.linse.ufsc.br/noise.html">NOISEX-92</a>.The first 2 minutes of each noise are mixed with the speech in 600 utterances at one of 4 SNRs (0dB, -5dB, -10dB, -15dB). In total, this yields 9600 training samples </div>),
+                href="http://spib.linse.ufsc.br/noise.html">NOISEX-92</a>.The first 2 minutes of each noise are mixed
+                with the speech in 600 utterances at one of 4 SNRs (0dB, -5dB, -10dB, -15dB). In total, this yields 9600
+                training samples </div>),
             (<div>3. You can use <a href="https://github.com/mpariente/pystoi">STOI</a> (Short-Time Objective
                 Intelligibility) and <a href="https://www.itu.int/rec/T-REC-P.862">PESQ</a> (Perceptual evaluation of
                 speech quality) as measures to evaluate the quality and intelligibility of the enhanced speech
@@ -118,9 +120,9 @@ export default class IndexPage extends React.Component {
 
         return (
             <div>
-                <Header />
+                <Header/>
                 <Row className={styles.banner}>
-                    <Col span={14} offset={5}>
+                    <Col span={18} offset={3}>
                         <List
                             dataSource={BannerDataSource}
                             bordered={true}
@@ -131,14 +133,14 @@ export default class IndexPage extends React.Component {
                 </Row>
                 <Layout className={styles.content}>
                     <Row>
-                        <Col span={14} offset={5}>
+                        <Col span={18} offset={3}>
                             <Upload {...props}>
                                 <Button><Icon type="upload"/>Select noisy speech</Button>
                             </Upload>
                         </Col>
                     </Row>
                     <Row>
-                        <Col span={14} offset={5}>
+                        <Col span={18} offset={3}>
                             <Button
                                 type="primary"
                                 onClick={this.handleUpload}
