@@ -1,4 +1,5 @@
-![low_snr_demo](src/assets/low_snr_demo.png)
+![low_snr_demo](src/assets/online.png)
+![low_snr_demo](src/assets/table.png)
 
 This project is a demonstration of the paper *UNetGAN: A Robust Speech Enhancement Approach in Time Domain for Extremely Low Signal-to-noise Ratio Condition*.
 
