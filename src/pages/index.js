@@ -93,7 +93,7 @@ export default class IndexPage extends React.Component {
                 corpus</a> and selected babble, factoryfloor1, destroyerengine and destroyerops from <a
                 href="http://spib.linse.ufsc.br/noise.html">NOISEX-92</a>.The first 2 minutes of each noise are mixed
                 with the speech in 600 utterances at one of 4 SNRs (0dB, -5dB, -10dB, -15dB). In total, this yields 9600
-                training samples </div>),
+                training samples. </div>),
             (<div>3. You can use <a href="https://github.com/mpariente/pystoi">STOI</a> (Short-Time Objective
                 Intelligibility) and <a href="https://www.itu.int/rec/T-REC-P.862">PESQ</a> (Perceptual evaluation of
                 speech quality) as measures to evaluate the quality and intelligibility of the enhanced speech
@@ -120,7 +120,7 @@ export default class IndexPage extends React.Component {
 
         return (
             <div>
-                <Header/>
+                <Header selectedKeys="1"/>
                 <Row className={styles.banner}>
                     <Col span={18} offset={3}>
                         <List
